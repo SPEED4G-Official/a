@@ -1,6 +1,6 @@
 #!/bin/bash
 
-root_directory="/path/to/your/root/directory"
+root_directory="/www/wwwroot"
 
 if [ -d "$root_directory" ]; then
   cd "$root_directory"
