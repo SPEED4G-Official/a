@@ -1,15 +1,8 @@
-#!/bin/bash
+read -p " Username Squid Proxy(Enter = admin) : " usernamesquid
+  [ -z "${usernamesquid}" ] && usernamesquid="admin"
 
-############################################################
-# Squid Proxy Installer
-# Author: Yujin Boby
-# Email: admin@serverOk.in
-# Github: https://github.com/serverok/squid-proxy-installer/
-# Web: https://serverok.in/squid
-# If you need professional assistance, reach out to
-# https://serverok.in/contact
-############################################################
-
+read -p " Password Squid Proxy(Enter = admin): " passwordsquid
+  [ -z "${passwordsquid}" ] && passwordsquid="admin"
 if [ `whoami` != root ]; then
 	echo "ERROR: You need to run the script as user root or add sudo before command."
 	exit 1
@@ -227,4 +220,4 @@ echo
 echo -e "${CYAN}To create a proxy user, run command: squid-add-user${NC}"
 echo -e "${CYAN}To change squid proxy port, see ${GREEN}https://serverok.in/how-to-change-port-of-squid-proxy-server${NC}"
 echo -e "${NC}"
-
+sudo /usr/bin/htpasswd -b -c /etc/squid/passwd $usernamesquid $passwordsquid
