@@ -3,7 +3,7 @@
 status=$(service virtnetwork status)
 
 if [[ ! "$status" =~ "viifbr0 is running" ]]; then
-    service virtnetwork status
+    service virtnetwork start
 else
     echo "Network Running"
 fi
