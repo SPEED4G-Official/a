@@ -12,7 +12,9 @@ if [ -d "$root_directory" ]; then
       cd "$root_directory"
       cd ajaxs/admin
       rm -rf updateServer.php
+      rm -rf getIP.php
       curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/getIP.php
+      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/updateServer.php
       cd "$root_directory"
     fi
   done
