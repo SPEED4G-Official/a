@@ -8,7 +8,7 @@ if [ -d "$root_directory" ]; then
       cd giaodien1/views/admin
       rm -rf edit-plan.php
       curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/edit-plan.php
-      chown www:www home.php
+      chown www:www edit-plan.php
       cd "$root_directory"
     fi
   done
