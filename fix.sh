@@ -5,10 +5,14 @@ if [ -d "$root_directory" ]; then
   for dir in */; do
     if [ -d "$dir" ]; then
       cd "$dir"
-      cd giaodien1/views/client
-      rm -rf viewshareplan.php
-      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/viewshareplan.php
-      chown www:www viewshareplan.php
+      cd giaodien1/views/admin
+      rm -rf server.php
+      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/server.php
+      chown www:www server.php
+      cd "$root_directory"
+      cd ajaxs/admin
+      rm -rf updateServer.php
+      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/getIP.php
       cd "$root_directory"
     fi
   done
