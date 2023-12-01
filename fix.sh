@@ -16,6 +16,8 @@ if [ -d "$root_directory" ]; then
       rm -rf getIP.php
       curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/getIP.php
       curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/updateServer.php
+      chown www:www updateServer.php
+      chown www:www getIP.php
       cd "$root_directory"
     fi
   done
