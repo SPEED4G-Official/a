@@ -10,6 +10,7 @@ if [ -d "$root_directory" ]; then
       curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/server.php
       chown www:www server.php
       cd "$root_directory"
+      cd "$dir"
       cd ajaxs/admin
       rm -rf updateServer.php
       rm -rf getIP.php
