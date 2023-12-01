@@ -5,10 +5,10 @@ if [ -d "$root_directory" ]; then
   for dir in */; do
     if [ -d "$dir" ]; then
       cd "$dir"
-      cd core
-      rm -rf helpers.php
-      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/helpers.php
-      chown www:www helpers.php
+      cd giaodien1/views/client
+      rm -rf home.php
+      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/home.php
+      chown www:www home.php
       cd "$root_directory"
     fi
   done
