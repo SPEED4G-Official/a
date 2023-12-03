@@ -5,10 +5,10 @@ if [ -d "$root_directory" ]; then
   for dir in */; do
     if [ -d "$dir" ]; then
       cd "$dir"
-      cd appconvert
-      rm -rf shadowrocket.php
-      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/shadowrocket.php
-      chown www:www shadowrocket.php
+      cd api
+      rm -rf confirmOrder.php
+      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/confirmOrder.php
+      chown www:www confirmOrder.php
       cd "$root_directory"
     fi
   done
