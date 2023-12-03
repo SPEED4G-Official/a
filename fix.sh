@@ -5,10 +5,10 @@ if [ -d "$root_directory" ]; then
   for dir in */; do
     if [ -d "$dir" ]; then
       cd "$dir"
-      cd appconvert
-      rm -rf singbox.php
-      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/singbox.php
-      chown www:www singbox.php
+      cd giaodien1/views/client
+      rm -rf shareplan.php
+      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/shareplan.php
+      chown www:www shareplan.php
       cd "$root_directory"
     fi
   done
