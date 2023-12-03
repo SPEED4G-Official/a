@@ -5,11 +5,10 @@ if [ -d "$root_directory" ]; then
   for dir in */; do
     if [ -d "$dir" ]; then
       cd "$dir"
-      rm -rf appconvert
-      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/appconvert.zip
-      unzip appconvert.zip
-      rm -rf appconvert.zip
-      chown www:www appconvert
+      cd ajaxs/client
+      rm -rf checkCoupon.php
+      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/checkCoupon.php
+      chown www:www checkCoupon.php
       cd "$root_directory"
     fi
   done
