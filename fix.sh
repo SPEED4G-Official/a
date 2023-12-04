@@ -5,9 +5,10 @@ if [ -d "$root_directory" ]; then
   for dir in */; do
     if [ -d "$dir" ]; then
       cd "$dir"
-      rm -rf .htaccess
-      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/.htaccess
-      chown www:www .htaccess
+      cd giaodien1/views/client
+      rm -rf home.php
+      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/home.php
+      chown www:www home.php
       cd "$root_directory"
     fi
   done
