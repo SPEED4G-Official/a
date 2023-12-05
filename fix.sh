@@ -6,9 +6,9 @@ if [ -d "$root_directory" ]; then
     if [ -d "$dir" ]; then
       cd "$dir"
       cd giaodien1/views/client
-      rm -rf shadowrocket.php
-      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/shadowrocket.php
-      chown www:www shadowrocket.php
+      rm -rf share.php
+      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/share.php
+      chown www:www share.php
       cd "$root_directory"
     fi
   done
