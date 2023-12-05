@@ -6,9 +6,9 @@ if [ -d "$root_directory" ]; then
     if [ -d "$dir" ]; then
       cd "$dir"
       cd giaodien1/views/client
-      rm -rf orders.php
-      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/orders.php
-      chown www:www orders.php
+      rm -rf payment.php
+      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/payment.php
+      chown www:www payment.php
       cd "$root_directory"
     fi
   done
