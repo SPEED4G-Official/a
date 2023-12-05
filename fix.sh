@@ -6,9 +6,9 @@ if [ -d "$root_directory" ]; then
     if [ -d "$dir" ]; then
       cd "$dir"
       cd giaodien1/views/client
-      rm -rf editshareplan.php
-      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/editshareplan.php
-      chown www:www editshareplan.php
+      rm -rf knowledgebase.php
+      curl -OL https://raw.githubusercontent.com/SPEED4G-Official/a/main/knowledgebase.php
+      chown www:www knowledgebase.php
       cd "$root_directory"
     fi
   done
