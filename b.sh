@@ -1,5 +1,6 @@
 if core-server status | grep -q "level=error"; then
-    echo "Có lỗi trong core-server status"
+    core-server restart
+    echo "Khởi Động Lại Thành Công"
 else
-    echo "Không có lỗi trong core-server status"
+    echo "Không Tìm Thấy Lỗi"
 fi
