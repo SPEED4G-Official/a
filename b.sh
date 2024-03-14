@@ -2,7 +2,7 @@
 
 while :
 do
-    result=$(telnet 103.69.96.101 7801 2>&1 | grep "Connection refused")
+    result=$(telnet 103.129.126.180 7800 2>&1 | grep "Connection refused")
 
     if [[ -n $result ]]; then
         echo "Connection refused detected. Restarting service..."
